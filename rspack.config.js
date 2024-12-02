@@ -2,6 +2,14 @@ const rspack = require('@rspack/core');
 const packageJson = require('./package.json');
 
 module.exports = {
+  // ignoreWarnings: [
+  //   warning => {
+  //     if (warning.message.includes('Critical dependency')) {
+  //       return true;
+  //     }
+  //     return false;
+  //   }
+  // ],
   entry: {
     main: './src/index.ts',
   },
@@ -21,7 +29,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.(js|ts)x?$/,
         exclude: [/node_modules/],
         loader: 'builtin:swc-loader',
         options: {
