@@ -1,0 +1,28 @@
+{
+  "name": "sheets-rspack-demo",
+  "private": false,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview",
+    "dev:rspack": "rspack dev",
+    "build:rspack": "rspack build",
+    "preview:rspack": "rspack preview"
+  },
+  "dependencies": {
+    "@univerjs/presets": "0.5.1",
+    "@univerjs/sheets-crosshair-highlight": "0.5.1",
+    "@univerjs/sheets-zen-editor": "0.5.1",
+    "react": "^18.3.1",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.1.4",
+    "@rspack/cli": "^1.1.4",
+    "@rspack/core": "^1.1.4",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "typescript": "^5.7.2"
+  }
+}
